@@ -22,6 +22,12 @@ public class GoodsController implements ApplicationContextAware {
     private ApplicationContext annotationConfigApplicationContext;
     @RequestMapping("/get")
     public String getGoods(){
+        int i= 1/0;
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         String port = annotationConfigApplicationContext.getEnvironment().getActiveProfiles()[0];
         System.out.println(port+" 服务执行了........");
         return "iphone";
