@@ -1,4 +1,4 @@
-package com.hzw.study.portal.config;
+package com.hzw.study.config.config;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

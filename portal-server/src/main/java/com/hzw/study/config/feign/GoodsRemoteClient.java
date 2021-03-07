@@ -1,6 +1,5 @@
-package com.hzw.study.portal.feign;
+package com.hzw.study.config.feign;
 
-import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @description
  * @createTime 2021/2/28 20:19
  */
-@FeignClient("goods-server")
+//@FeignClient("goods-server")
 public interface GoodsRemoteClient {
     @RequestMapping("/goods/get")
     public String goods();
